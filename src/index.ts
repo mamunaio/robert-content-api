@@ -90,7 +90,7 @@ export default {
     }
 
     const tabName = slugToTabName(slug);
-    const gvizUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tabName)}`;
+    const gvizUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:csv&headers=1&sheet=${encodeURIComponent(tabName)}`;
 
     try {
       const response = await fetch(gvizUrl, {
